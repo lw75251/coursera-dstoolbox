@@ -3,9 +3,9 @@
 # Params: state   - 2-character abbreviation of US States
 #         outcome - "heart attack", "heart faliure", or "pneumonia"
 #         num - Rank of hospital but can also be "best" or "worst"
-# Description: Returns character vector with name of hospital that has the lowest
-# 30-day mortality for the specified outcome in that state. Function will validate
-# input and throw an error if either state or outcome is invalid.
+# Description: Returns a dataframe containing the names of the hospitals
+# that are the best in their respecitive states for 30-day heart attak death
+# rates. 
 
 rankall <- function(outcome, num = "best") {
   
